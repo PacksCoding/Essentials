@@ -11,10 +11,6 @@ commands:
     description: Marks you as away-from-keyboard.
     usage: /<command> [player]
     aliases: [eafk,away,eaway]
-  antioch:
-    description: 'A little surprise for operators.'
-    usage: /<command> [message]
-    aliases: [eantioch,grenade,egrenade,tnt,etnt]
   back:
     description: Teleports you to your location prior to tp/spawn/warp.
     usage: /<command>
@@ -31,14 +27,6 @@ commands:
     description: Gets the top balance values.
     usage: /<command> <page>
     aliases: [ebalancetop,baltop,ebaltop]
-  ban:
-    description: Bans a player.
-    usage: /<command> <player> [reason]
-    aliases: [eban]
-  banip:
-    description: Bans an IP address.
-    usage: /<command> <address>
-    aliases: [ebanip]
   book:
     description: Allows reopening and editing of sealed books.
     usage: /<command> [title|author [name]]
@@ -47,18 +35,10 @@ commands:
     description: Breaks the block you are looking at.
     usage: /<command>
     aliases: [ebreak]
-  broadcast:
-    description: Broadcasts a message to the entire server.
-    usage: /<command> <msg>
-    aliases: [bc,ebc,bcast,ebcast,ebroadcast,shout,eshout]
   bigtree:
     description: Spawn a big tree where you are looking.
     usage: /<command> <tree|redwood|jungle>
     aliases: [ebigtree,largetree,elargetree]
-  burn:
-    description: Set a player on fire.
-    usage: /<command> <player> <seconds>
-    aliases: [eburn]
   clearinventory:
     description: Clear all items in your inventory.
     usage: /<command> [player|*] [item[:<data>]|*|**] [amount]
@@ -67,17 +47,10 @@ commands:
     description: Describes your current bearing.
     usage: /<command>
     aliases: [ecompass,direction,edirection]
-  customtext:
-    description: Allows you to create custom text commands.
-    usage: /<alias> - Define in bukkit.yml
   delhome:
     description: Removes a home.
     usage: /<command> [player:]<name>
     aliases: [edelhome,remhome,eremhome,rmhome,ermhome]
-  deljail:
-    description: Removes a jail.
-    usage: /<command> <jailname>
-    aliases: [edeljail,remjail,eremjail,rmjail,ermjail]
   delwarp:
     description: Deletes the specified warp.
     usage: /<command> <warp>
@@ -118,10 +91,6 @@ commands:
     description: Take off, and soar!
     usage: /<command> [player] [on|off]
     aliases: [efly]
-  fireball:
-    description: Throw a fireball.
-    usage: /<command> [small|skull]
-    aliases: [efireball,fireentity,efireentity,fireskull,efireskull]
   firework:
     description: Allows you to modify a stack of fireworks.
     usage: /<command> <<meta param>|power [amount]|clear|fire [amount]>
@@ -186,10 +155,6 @@ commands:
     description: Searches for an item.
     usage: /<command> <item>
     aliases: [dura,edura,durability,edurability,eitemdb,itemno,eitemno]
-  jails:
-    description: List all jails.
-    usage: /<command>
-    aliases: [ejails]
   jump:
     description: Jumps to the nearest block in the line of sight.
     usage: /<command>
@@ -214,10 +179,6 @@ commands:
     description: Throw an exploding kitten at your opponent.
     usage: /<command>
     aliases: [ekittycannon]
-  lightning:
-    description: The power of Thor. Strike at cursor or player.
-    usage: /<command> [player] [power]
-    aliases: [elightning,shock,eshock,smite,esmite,strike,estrike,thor,ethor]
   list:
     description: List all online players.
     usage: /<command> [group]
@@ -254,10 +215,6 @@ commands:
     description: Change your nickname or that of another player.
     usage: /<command> [player] <nickname|off>
     aliases: [enick,nickname,enickname]
-  nuke:
-    description: May death rain upon them.
-    usage: /<command> [player]
-    aliases: [enuke]
   pay:
     description: Pays another player from your balance.
     usage: /<command> <player> <amount>
@@ -270,14 +227,6 @@ commands:
     description: Adds custom potion effects to a potion.
     usage: /<command> <clear|apply|effect:<effect> power:<power> duration:<duration>>
     aliases: [epotion,elixer,eelixer]
-  powertool:
-    description: Assigns a command to the item in hand.
-    usage: /<command> [l:|a:|r:|c:|d:][command] [arguments] - {player} can be replaced by name of a clicked player.
-    aliases: [epowertool,pt,ept]
-  powertooltoggle:
-    description: Enables or disables all current powertools.
-    usage: /<command>
-    aliases: [epowertooltoggle,ptt,eptt,pttoggle,epttoggle]
   ptime:
     description: Adjust player's client time. Add @ prefix to fix.
     usage: /<command> [list|reset|day|night|dawn|17:30|4pm|4000ticks] [player|*]
@@ -322,10 +271,6 @@ commands:
     description: Set your home to your current location.
     usage: /<command> [[player:]name]
     aliases: [esethome,createhome,ecreatehome]
-  setjail:
-    description: Creates a jail where you specified named [jailname].
-    usage: /<command> <jailname>
-    aliases: [esetjail,createjail,ecreatejail]
   setwarp:
     description: Creates a new warp.
     usage: /<command> <warp>
@@ -354,10 +299,6 @@ commands:
     description: Change your speed limits.
     usage: /<command> [type] <speed> [player]
     aliases: [flyspeed,eflyspeed,fspeed,efspeed,espeed,walkspeed,ewalkspeed,wspeed,ewspeed]
-  sudo:
-    description: Make another user perform a command.
-    usage: /<command> <player> <command [args]>
-    aliases: [esudo]
   suicide:
     description: Causes you to perish.
     usage: /<command>
@@ -374,10 +315,6 @@ commands:
     description: Display/Change the world time. Defaults to current world.
     usage: /<command> [day|night|dawn|17:30|4pm|4000ticks] [worldname|all]
     aliases: [day,eday,night,enight,etime]
-  togglejail:
-    description: Jails/Unjails a player, TPs them to the jail specified.
-    usage: /<command> <player> <jailname> [datediff]
-    aliases: [jail,ejail,tjail,etjail,etogglejail,unjail,eunjail]
   top:
     description: Teleport to the highest block at your current position.
     usage: /<command>
@@ -390,10 +327,6 @@ commands:
     description: Request to teleport to the specified player.
     usage: /<command> <player>
     aliases: [call,ecall,etpa,tpask,etpask]
-  tpaall:
-    description: Requests all players online to teleport to you.
-    usage: /<command> <player>
-    aliases: [etpaall]
   tpaccept:
     description: Accepts a teleport request.
     usage: /<command> [otherplayer]
@@ -402,10 +335,6 @@ commands:
     description: Request that the specified player teleport to you.
     usage: /<command> <player>
     aliases: [etpahere]
-  tpall:
-    description: Teleport all online players to another player.
-    usage: /<command> <player>
-    aliases: [etpall]
   tpdeny:
     description: Reject a teleport request.
     usage: /<command>
@@ -434,22 +363,10 @@ commands:
     description: Spawn a tree where you are looking.
     usage: /<command> <tree|birch|redwood|redmushroom|brownmushroom|jungle|junglebush|swamp>
     aliases: [etree]
-  unban:
-    description: Unbans the specified player.
-    usage: /<command> <player>
-    aliases: [pardon,eunban,epardon]
-  unbanip:
-    description: Unbans the specified IP address.
-    usage: /<command> <address>
-    aliases: [eunbanip,pardonip,epardonip]
   unlimited:
     description: Allows the unlimited placing of items.
     usage: /<command> <list|item|clear> [player]
     aliases: [eunlimited,ul,unl,eul,eunl]
-  vanish:
-    description: Hide yourself from other players.
-    usage: /<command> [player] [on|off]
-    aliases: [v,ev,evanish]
   warp:
     description: List all warps or warp to the specified location.
     usage: /<command> <pagenumber|warp> [player]
